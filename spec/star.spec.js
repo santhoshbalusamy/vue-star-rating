@@ -229,7 +229,7 @@ describe('Star Component', () => {
     })
 
     describe('dom events', () => {
-        it('should emit "star-selected" event on click', async () => {
+        it('should emit "star-selected" event on click', async() => {
             const wrapper = mount(Star, {
                 propsData: defaultProps
             });
@@ -242,7 +242,7 @@ describe('Star Component', () => {
         });
 
 
-        it('should emit "star-mouse-move" event on mousemove', async () => {
+        it('should emit "star-mouse-move" event on mousemove', async() => {
             const wrapper = mount(Star, {
                 propsData: defaultProps
             });

@@ -1,4 +1,4 @@
-class AlphaColor {
+export default class AlphaColor {
 
     constructor(color) {
         this.color = color
@@ -50,5 +50,3 @@ class AlphaColor {
         }
     }
 }
-
-module.exports = AlphaColor

@@ -49,10 +49,10 @@
 </template>
 <script type="text/javascript">
 /* eslint-disable vue/custom-event-name-casing */
-import Star from './star.vue'
+import Star from './star.vue';
+import { defineComponent } from 'vue';
 
-export default {
-
+export default defineComponent({
     name: 'VueStarRating',
     components: {
         Star
@@ -265,7 +265,7 @@ export default {
             return Object.assign(new Array(minLength).fill(fillValue), array)
         }
     }
-}
+});
 </script>
 <style scoped>
     .vue-star-rating-star {

@@ -295,7 +295,7 @@ describe('star-rating component', () => {
         });
 
 
-        it('should emit hover:rating event on mousemove', async () => {
+        it('should emit hover:rating event on mousemove', async() => {
             const wrapper = mount(StarRating)
             let star = wrapper.find('polygon')
             await star.trigger('mousemove')
@@ -304,7 +304,7 @@ describe('star-rating component', () => {
         });
 
 
-        it('should emit the update:rating event on click', async () => {
+        it('should emit the update:rating event on click', async() => {
             const wrapper = mount(StarRating)
             let star = wrapper.find('polygon')
             await star.trigger('click')
@@ -312,7 +312,7 @@ describe('star-rating component', () => {
             expect(wrapper.emitted()).toHaveProperty('update:rating')
         });
 
-        it('should not emit hove:rating when star is readonly ', async () => {
+        it('should not emit hove:rating when star is readonly ', async() => {
             const wrapper = mount(StarRating, {
                 propsData: {
                     readOnly: true
@@ -325,7 +325,7 @@ describe('star-rating component', () => {
             expect(wrapper.emitted()).not.toHaveProperty('hover:rating')
         });
 
-        it('should not emit update:rating when star is readonly ', async () => {
+        it('should not emit update:rating when star is readonly ', async() => {
             const wrapper = mount(StarRating, {
                 propsData: {
                     readOnly: true

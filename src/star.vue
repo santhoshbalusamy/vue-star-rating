@@ -69,9 +69,11 @@
 </template>
 
 <script type="text/javascript">
-import AlphaColor from './classes/AlphaColor'
+import AlphaColor from './classes/AlphaColor';
+import { defineComponent } from 'vue';
 
-export default {
+export default defineComponent({
+    // eslint-disable-next-line vue/multi-word-component-names
     name: 'Star',
     props: {
         fill: {
@@ -170,7 +172,7 @@ export default {
             return (this.fill <= 0) ? this.borderColor : this.activeBorderColor
         },
         maxSize() {
-            return this.starPoints.reduce(function(a, b) {
+            return this.starPoints.reduce(function (a, b) {
                 return Math.max(a, b)
             })
         },
@@ -240,7 +242,7 @@ export default {
             return new AlphaColor(color).parseAlphaColor().opacity
         }
     }
-}
+});
 </script>
 
 <style scoped>
