@@ -16,6 +16,9 @@ export default () => {
                     globals: {
                         vue: 'Vue'
                     }
+                },
+                resolve: {
+                    dedupe: ['vue'],
                 }
             }
         },
