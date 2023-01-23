@@ -302,10 +302,16 @@ export default defineComponent({
 
     .sr-only {
         position: absolute;
-        left: -10000px;
-        top: auto;
+        margin: -1px 0 0 -1px;
+        padding: 0;
+        display: block;
         width: 1px;
         height: 1px;
+        font-size: 1px;
+        line-height: 1px;
         overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+        outline: 0;
     }
 </style>
